@@ -2,19 +2,15 @@ import TextField from "@mui/material/TextField";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
-import isWeekend from "date-fns/isWeekend";
-import * as React from "react";
-
-export default function StaticDatePickerLandscape() {
+import React from 'react';
+const Calender = () => {
   const [value, setValue] = React.useState(new Date());
-
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <StaticDatePicker
-        orientation="landscape"
-        openTo="day"
+        displayStaticWrapperAs="desktop"
+        
         value={value}
-        shouldDisableDate={isWeekend}
         onChange={(newValue) => {
           setValue(newValue);
         }}
@@ -22,4 +18,6 @@ export default function StaticDatePickerLandscape() {
       />
     </LocalizationProvider>
   );
-}
+};
+
+export default Calender;
