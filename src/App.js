@@ -1,14 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Appointment from "./components/Appointment/Appointment/Appointment";
 import Home from "./components/Home/Home/Home";
-import Navigations from "./components/Shared-pages/Navigations";
+import TopMenu from "./components/Shared-pages/TopMenu/TopMenu";
 function App() {
   return (
     <BrowserRouter>
-      <Navigations></Navigations>
+      <TopMenu />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/appointment" element={<Appointment />} />
       </Routes>
     </BrowserRouter>
   );

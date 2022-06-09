@@ -36,7 +36,7 @@ const Services = () => {
           variant="h6"
           component="div"
         >
-          OUE SERVICES
+          OUE SERVICES*
         </Typography>
         <Typography sx={{ fontWeight: 600, m: 2 }} variant="h4" component="div">
           SERVICES WE PROVIDE

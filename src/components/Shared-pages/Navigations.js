@@ -1,21 +1,21 @@
-import * as React from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import { NavLink, useNavigate } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
-import { useTheme } from "@mui/material";
-import Drawer from "@mui/material/Drawer";
+import * as React from "react";
+import { NavLink } from "react-router-dom";
 
-import List from "@mui/material/List";
 
-import ListItem from "@mui/material/ListItem";
 
-import ListItemText from "@mui/material/ListItemText";
 
 export default function ButtonAppBar() {
   // let mail = JSON.parse(localStorage.getItem("Name"));
@@ -108,15 +108,13 @@ export default function ButtonAppBar() {
               </NavLink>
               <NavLink
                 style={{ textDecoration: "none", color: "white" }}
-                to="/service"
+                to="/appointment"
               >
                 <Button color="inherit">appointment</Button>
               </NavLink>
-              {/* {mail ? (
-                <Button onClick={logout} color="inherit">
-                  Logout:{mail}
-                </Button>
-              ) : ( */}
+              {/* <Link style={{textDecoration:"none",color:"wheat"}} to="/appointment">
+                <Button color="inherit">Appointment</Button>
+              </Link> */}
               <NavLink
                 style={{ textDecoration: "none", color: "white" }}
                 to="/login"
